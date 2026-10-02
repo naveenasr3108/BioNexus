@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0fdf4;
+  color: #16352a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+  padding: 38px 8%;
+  background: linear-gradient(135deg, #064e3b, #047857, #10b981);
+  color: white;
+  border-bottom: 4px solid #34d399;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #d1fae5;
+  font-size: 16px;
+}
+
+/* MAIN */
+
+main {
+  width: 84%;
+  max-width: 1000px;
+  margin: 45px auto;
+}
+
+/* CARDS */
+
+.upload-card,
+.result-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 28px rgba(6, 78, 59, 0.10);
+  border: 1px solid #d1fae5;
+}
+
+.upload-card h2 {
+  color: #047857;
+  margin-top: 0;
+}
+
+.result-card h2 {
+  color: #065f46;
+  margin-top: 0;
+}
+
+/* INPUTS */
+
+input[type="file"] {
+  display: block;
+  margin: 25px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 13px 15px;
+  border: 2px solid #bbf7d0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+/* BUTTONS */
+
+button {
+  margin-right: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #047857, #10b981);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #065f46, #059669);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.25);
+}
+
+button:disabled {
+  background: #94a3b8;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* FILE NAME */
+
+.file-name {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* ANALYSIS RESULT */
+
+.result-card {
+  border-left: 5px solid #10b981;
+}
+
+.result-card p {
+  padding: 8px 0;
+  line-height: 1.6;
+}
+
+/* SOURCE SECTION */
+
+.result-card h3 {
+  color: #2563eb;
+  margin-top: 28px;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 8px;
+}
+
+/* SOURCE TEXT */
+
+.result-card strong {
+  color: #047857;
+}
+
+/* ERROR */
+
+.error {
+  color: #dc2626;
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* SELECTION */
+
+::selection {
+  background: #a7f3d0;
+  color: #064e3b;
+}

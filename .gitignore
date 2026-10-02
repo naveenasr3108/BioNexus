@@ -42,3 +42,5 @@ dist/
 
 # Trained SciBERT model
 backend/models/scibert_domain_classifier/
+# Qdrant local database
+backend/app/qdrant_data/
